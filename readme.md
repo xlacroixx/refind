@@ -23,7 +23,7 @@
 
 ## Thanks to
 
-- [You, it's you!](https://github.com/<username>)
+- [LACROIXX](https://github.com/xlacroixx)
 
 ## Contributing
 

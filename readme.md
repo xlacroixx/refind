@@ -23,6 +23,25 @@
 2. Under settings, import `rose-pine.theme`
 3. Select `Rosé Pine` from the themes dropdown
 
+### Background border/text color caveat
+
+In order to apply the correct color to the `Boot (OS) from (disk)` text, the
+background picture's top-leftmost pixel needs to be colored with the text color.
+
+For discretion, a generously sized border surrounds the screen: if you don't
+like this, you can either switch to the:
+
+- borderless background pictures, e.g.:
+  `background-borderless.png`.
+  You will now instead have a single pixel visible instead of the border.
+- plain background pictures, e.g.:
+  `background-plain.png`
+  No pixel or border at all. This will cause the text to not follow Rosé Pine's
+  imposed text color.
+
+Especially with the latter option, you may want to simply disable the
+`Boot (OS) from (disk)` text.
+
 ## Gallery
 
 ![Rosé Pine with rEFInd](https://user-images.githubusercontent.com/1474821/166155319-06796439-95a7-4aea-910e-927c1f24518e.png)

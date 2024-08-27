@@ -27,7 +27,8 @@
 3. (Optional) Modify some settings there if you want. You probably do: you may
     want a different background or something.
 
-> [!WARNING]: you cannot insert another include statement in the file:
+> [!WARNING]
+> You cannot insert another include statement in the file:
 > rEFInd does not support third-level configuration files.
 
 If you want your configuration to survive repository updates, then you may

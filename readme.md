@@ -20,9 +20,19 @@
 ## Usage
 
 0. (Optional) Get your favorite [wallpaper](https://github.com/rose-pine/wallpapers)
-1. Open rEFInd
-2. Under settings, import `rose-pine.theme`
-3. Select `Rosé Pine` from the themes dropdown
+1. Clone this repository inside your rEFInd main directory, usually
+    `/boot/EFI/refind`, `/boot/efi/EFI/refind` or `/efi/EFI/refind`.
+2. Insert this statement **at the bottom** of your main rEFInd configuration file:
+    `include rose-pine/refind.conf`
+3. (Optional) Modify some settings there if you want. You probably do: you may
+    want a different background or something.
+
+> [!WARNING]: you cannot insert another include statement in the file:
+> rEFInd does not support third-level configuration files.
+
+If you want your configuration to survive repository updates, then you may
+duplicate the base file, edit this one and include it instead. Although you may
+probably don't need to, since rEFInd seldom changes.
 
 ### Background border/text color caveat
 

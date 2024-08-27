@@ -20,7 +20,7 @@
 ## Usage
 
 0. (Optional) Get your favorite [wallpaper](https://github.com/rose-pine/wallpapers)
-1. Clone this repository inside your rEFInd main directory, usually
+1. Copy all files and directories to your rEFInd main directory, usually
     `/boot/EFI/refind`, `/boot/efi/EFI/refind` or `/efi/EFI/refind`.
 2. Insert this statement **at the bottom** of your main rEFInd configuration file:
     `include rose-pine/refind.conf`

@@ -32,13 +32,11 @@ background picture's top-leftmost pixel needs to be colored with the text color.
 For discretion, a generously sized border surrounds the screen: if you don't
 like this, you can either switch to the:
 
-- borderless background pictures, e.g.:
-  `background-borderless.png`.
-  You will now instead have a single pixel visible instead of the border.
-- plain background pictures, e.g.:
-  `background-plain.png`
-  No pixel or border at all. This will cause the text to not follow Rosé Pine's
-  imposed text color.
+- borderless background pictures (e.g. `solid-main-borderless.png`):
+    you will now instead have a single pixel visible instead of the border;
+- plain background pictures (e.g. `background-plain.png`):
+    no pixel or border at all, so this will cause the text to not follow Rosé Pine's
+    imposed text color.
 
 Especially with the latter option, you may want to simply disable the
 `Boot (OS) from (disk)` text.

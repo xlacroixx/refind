@@ -62,3 +62,5 @@ file:
 ## Thanks to
 
 - [LACROIXX](https://github.com/xlacroixx)
+
+<!-- vi:set nowrap: -->

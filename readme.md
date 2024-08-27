@@ -19,6 +19,7 @@
 
 ## Usage
 
+0. (Optional) Get your favorite [wallpaper](https://github.com/rose-pine/wallpapers)
 1. Open rEFInd
 2. Under settings, import `rose-pine.theme`
 3. Select `Rosé Pine` from the themes dropdown

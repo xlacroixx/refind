@@ -50,7 +50,10 @@ like this, you can either switch to the:
     Rosé Pine's imposed text color.
 
 Especially with the latter option, you may want to simply disable the
-`Boot (OS) from (disk)` text.
+`Boot (OS) from (disk)` text by uncommenting the following line in the include
+file:
+
+    #hideui label
 
 ## Gallery
 

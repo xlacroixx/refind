@@ -48,13 +48,3 @@ Especially with the latter option, you may want to simply disable the
 ## Thanks to
 
 - [LACROIXX](https://github.com/xlacroixx)
-
-## Contributing
-
-> Prefer using [@rose-pine/build](https://github.com/rose-pine/build) when possible
-
-Modify `template.json` using Rosé Pine variables, then build variants:
-
-```sh
-npx @rose-pine/build@latest
-```

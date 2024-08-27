@@ -6,7 +6,7 @@
 > [!NOTE]
 > Work-in-progress.
 >
-> Currently the theme is all innatural plastic, real hair and a bit of bad vibes
+> Currently the theme is all unnatural plastic, real hair and a bit of bad vibes
 > for the clashy antagonist
 
 <p align="center">All natural pine, faux fur and a bit of soho vibes for the classy minimalist</p>

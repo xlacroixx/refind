@@ -54,6 +54,7 @@ for variant in "${variants[@]}"; do
   mogrify \
     -alpha on \
     -transparent black \
+    -fuzz 25% \
     "${variant}/*.png"
   mogrify -antialias "${variant}/*.png"
 
@@ -144,6 +145,7 @@ for variant in "${variants[@]}"; do
   mogrify \
     -alpha on \
     -transparent black \
+    -fuzz 25% \
     "${variant}-color/*.png"
   mogrify -antialias "${variant}-color/*.png"
 done

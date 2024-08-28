@@ -39,21 +39,28 @@ probably don't need to, since rEFInd seldom changes.
 
 In order to apply the correct color to the `Boot (OS) from (disk)` text, the
 background picture's top-leftmost pixel needs to be colored with the text color.
+While borders or a single colored pixel are options in order to make the change
+stealthier, it comes with the disadvantage of also *coloring the booting screen
+with the text color*.
 
-For discretion, a generously sized border surrounds the screen: if you don't
-like this, you can either switch to the:
+In order to not blind users, solid color (no text color) is used by default.
 
+If you want to color the text regardless, you have two options:
+
+- bordered background pictures (e.g. `solid-main-plain.png`):
+    generously sized borders surround the screen;
 - single pixel background pictures (e.g. `solid-main-single.png`):
-    you will now instead have a single pixel visible instead of the border;
-- plain background pictures (e.g. `solid-main-plain.png`):
-    no pixel or border at all, so this will cause the text to not follow
-    Rosé Pine's imposed text color.
+    a single pixel is visible in the top-left corner.
 
-Especially with the latter option, you may want to simply disable the
-`Boot (OS) from (disk)` text by uncommenting the following line in the include
-file:
+If you choose to use one of these options, do not forget to re-enable the
+`Boot (OS) from (disk)` text by commenting the following line in the include
+file, if you want to:
 
-    #hideui label
+    hideui label
+
+Unfortunately, both of these options only support well resolutions with 16:9
+aspect ratios. They also use 8K background pictures, although rEFInds handles
+rescaling well and the size remains small thanks to good compression.
 
 ## Gallery
 

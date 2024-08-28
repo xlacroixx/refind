@@ -1,0 +1,149 @@
+#!/bin/bash
+#
+# The worst bash script in human History.
+set -ex
+
+# NOTE: requires ImageMagick
+# TODO: use GraphicsMagick
+# TODO: use magick instead of in-place mogrify?
+
+variants=('main' 'moon' 'dawn')
+
+for variant in "${variants[@]}"; do
+  # this is vile
+  if [[ "${variant}" == 'main' ]]; then
+    text="#e0def4"
+    love="#eb6f92"
+    gold="#f6c177"
+    rose="#ebbcba"
+    pine="#31748f"
+    foam="#9ccfd8"
+    iris="#c4a7e7"
+  elif [[ "${variant}" == 'moon' ]]; then
+    text="#e0def4"
+    love="#eb6f92"
+    gold="#f6c177"
+    rose="#ea9a97"
+    pine="#3e8fb0"
+    foam="#9ccfd8"
+    iris="#c4a7e7"
+  elif [[ "${variant}" == 'dawn' ]]; then
+    text="#575279"
+    love="#b4637a"
+    gold="#ea9d34"
+    rose="#d7827e"
+    pine="#286983"
+    foam="#56949f"
+    iris="#907aa9"
+  fi
+
+  # monochrome
+  mogrify \
+    -background black \
+    -alpha remove \
+    -alpha off \
+    -path "${variant}" \
+    'base/*.png'
+  mogrify \
+    -colorspace sRGB \
+    -type truecolor \
+    -fill "${text}" \
+    -opaque '#bfbfbf' \
+    -fuzz 50% \
+    "${variant}/*.png"
+  mogrify \
+    -alpha on \
+    -transparent black \
+    "${variant}/*.png"
+  mogrify -antialias "${variant}/*.png"
+
+  # color
+  mogrify \
+    -background black \
+    -alpha remove \
+    -alpha off \
+    -path "${variant}-color" \
+    'base/*.png'
+
+  mogrify \
+    -colorspace sRGB \
+    -type truecolor \
+    -fill "${text}" \
+    -opaque '#bfbfbf' \
+    -fuzz 50% \
+    "${variant}-color/func_*.png" \
+    "${variant}-color/os_elementary.png" \
+    "${variant}-color/os_mac.png" \
+    "${variant}-color/os_mx.png" \
+    "${variant}-color/os_unknown.png" \
+    "${variant}-color/tool_mok_tool.png"
+  mogrify \
+    -colorspace sRGB \
+    -type truecolor \
+    -fill "${love}" \
+    -opaque '#bfbfbf' \
+    -fuzz 50% \
+    "${variant}-color/os_centos.png" \
+    "${variant}-color/os_debian.png" \
+    "${variant}-color/os_freebsd.png" \
+    "${variant}-color/os_win.png"
+  mogrify \
+    -colorspace sRGB \
+    -type truecolor \
+    -fill "${gold}" \
+    -opaque '#bfbfbf' \
+    -fuzz 50% \
+    "${variant}-color/os_linux.png" \
+    "${variant}-color/os_openbsd.png"
+  mogrify \
+    -colorspace sRGB \
+    -type truecolor \
+    -fill "${rose}" \
+    -opaque '#bfbfbf' \
+    -fuzz 50% \
+    "${variant}-color/os_ubuntu.png"
+  mogrify \
+    -colorspace sRGB \
+    -type truecolor \
+    -fill "${pine}" \
+    -opaque '#bfbfbf' \
+    -fuzz 50% \
+    "${variant}-color/os_antergos.png" \
+    "${variant}-color/os_deepin.png" \
+    "${variant}-color/os_fedora.png" \
+    "${variant}-color/os_kali.png" \
+    "${variant}-color/os_kubuntu.png" \
+    "${variant}-color/os_solus.png" \
+    "${variant}-color/os_ubuntugnome.png" \
+    "${variant}-color/os_win8.png" \
+    "${variant}-color/os_win10.png" \
+    "${variant}-color/os_zorin.png"
+  mogrify \
+    -colorspace sRGB \
+    -type truecolor \
+    -fill "${foam}" \
+    -opaque '#bfbfbf' \
+    -fuzz 50% \
+    "${variant}-color/os_android.png" \
+    "${variant}-color/os_arch.png" \
+    "${variant}-color/os_linuxmint.png" \
+    "${variant}-color/os_manjaro.png" \
+    "${variant}-color/os_neon.png" \
+    "${variant}-color/os_pop.png" \
+    "${variant}-color/os_void.png" \
+    "${variant}-color/os_win8_official.png"
+  mogrify \
+    -colorspace sRGB \
+    -type truecolor \
+    -fill "${iris}" \
+    -opaque '#bfbfbf' \
+    -fuzz 50% \
+    "${variant}-color/os_gentoo.png" \
+    "${variant}-color/os_parabola.png"
+
+  mogrify \
+    -alpha on \
+    -transparent black \
+    "${variant}-color/*.png"
+  mogrify -antialias "${variant}-color/*.png"
+done

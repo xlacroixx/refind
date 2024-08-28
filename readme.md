@@ -62,5 +62,7 @@ file:
 ## Thanks to
 
 - [LACROIXX](https://github.com/xlacroixx)
+- [Luke Childs] for Ambience rEFInd Theme, licensed under the
+  [MIT License](./acknowledgments), where icons are from.
 
 <!-- vi:set nowrap: -->

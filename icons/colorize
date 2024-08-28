@@ -83,7 +83,6 @@ for variant in "${variants[@]}"; do
     -fill "${love}" \
     -opaque '#bfbfbf' \
     -fuzz 50% \
-    "${variant}-color/os_centos.png" \
     "${variant}-color/os_debian.png" \
     "${variant}-color/os_freebsd.png" \
     "${variant}-color/os_win.png"
@@ -93,6 +92,7 @@ for variant in "${variants[@]}"; do
     -fill "${gold}" \
     -opaque '#bfbfbf' \
     -fuzz 50% \
+    "${variant}-color/os_centos.png" \
     "${variant}-color/os_linux.png" \
     "${variant}-color/os_openbsd.png"
   mogrify \

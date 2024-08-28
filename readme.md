@@ -23,7 +23,7 @@
 1. Copy all files and directories to your rEFInd main directory, usually
     `/boot/EFI/refind`, `/boot/efi/EFI/refind` or `/efi/EFI/refind`.
 2. Insert this statement **at the bottom** of your main rEFInd configuration file:
-    `include rose-pine/refind.conf`
+    `include rose-pine/theme.conf`
 3. (Optional) Modify some settings there if you want. You probably do: you may
     want a different background or something.
 

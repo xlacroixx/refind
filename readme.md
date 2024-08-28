@@ -64,5 +64,7 @@ file:
 - [LACROIXX](https://github.com/xlacroixx)
 - [Luke Childs] for Ambience rEFInd Theme, licensed under the
   [MIT License](./acknowledgments), where icons are from.
+- [IBM Corp.], for the default nice font IBM Plex, licensed under the
+  [OFL-1.1](./acknowledgments)
 
 <!-- vi:set nowrap: -->

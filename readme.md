@@ -29,28 +29,18 @@ If you want your configuration to survive repository updates, then you may
 duplicate the base file, edit this one and include it instead. Although you may
 probably don't need to, since rEFInd seldom changes.
 
-### Background border/text color caveat
+### Alternative backgrounds
 
-In order to apply the correct color to the `Boot (OS) from (disk)` text, the
-background picture's top-leftmost pixel needs to be colored with the text color.
-While borders or a single colored pixel are options in order to make the change
-stealthier, it comes with the disadvantage of also *coloring the booting screen
-with the text color*.
+Submenu text backgrounds take the top-leftmost pixel's color.
 
 In order to not blind users, solid color (no text color) is used by default.
 
-If you want to color the text regardless, you have two options:
+There are two alternative background pictures to choose from:
 
 - bordered background pictures (e.g. `solid-main-plain.png`):
     generously sized borders surround the screen;
 - single pixel background pictures (e.g. `solid-main-single.png`):
     a single pixel is visible in the top-left corner.
-
-If you choose to use one of these options, do not forget to re-enable the
-`Boot (OS) from (disk)` text by commenting the following line in the include
-file, if you want to:
-
-    hideui label
 
 Unfortunately, both of these options only support well resolutions with 16:9
 aspect ratios. They also use 8K background pictures, although rEFInds handles

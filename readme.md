@@ -74,6 +74,7 @@ rescaling well and the size remains small thanks to good compression.
   licensed under the [MIT License](./acknowledgments), where icons are from.
 - [IBM Corp.](https://github.com/IBM), for the default nice font
   [IBM Plex](https://github.com/IBM/plex),
-  licensed under the [OFL-1.1](./acknowledgments)
+  licensed under the [OFL-1.1](./acknowledgments) (although it is disabled for
+  now).
 
 <!-- vi:set nowrap: -->

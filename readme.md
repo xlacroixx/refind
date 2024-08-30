@@ -48,7 +48,7 @@ rescaling well and the size remains small thanks to good compression.
 
 ## Gallery
 
-![Rosé Pine with rEFInd](https://user-images.githubusercontent.com/1474821/166155319-06796439-95a7-4aea-910e-927c1f24518e.png)
+![Rosé Pine with rEFInd](./img/main.png)
 
 ## Thanks to
 

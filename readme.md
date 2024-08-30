@@ -48,9 +48,9 @@ rescaling well and the size remains small thanks to good compression.
 
 ## Gallery
 
-<img alt="Rosé Pine with rEFInd" src="./img/main.png" width="512" height="288"/>
-<img alt="Rosé Pine Moon with rEFInd" src="./img/moon.png" width="512" height="288"/>
-<img alt="Rosé Pine Dawn with rEFInd" src="./img/dawn.png" width="512" height="288"/>
+![Rosé Pine with rEFInd](./img/main.png)
+![Rosé Pine Moon with rEFInd](./img/moon.png)
+![Rosé Pine Dawn with rEFInd](./img/dawn.png)
 
 ## Thanks to
 

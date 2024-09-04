@@ -1,7 +1,0 @@
-Commands used
-=============
-
-IBM Plex Mono
--------------
-
-./mkfont.sh IBM-Plex-Mono 14 -3.75 ibm-plex-mono-14.png

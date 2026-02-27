@@ -15,11 +15,11 @@
 
 0. (Optional) Get your favorite [wallpaper](https://github.com/rose-pine/wallpapers)
 1. Copy all files and directories to your rEFInd main directory, usually
-    `/boot/EFI/refind`, `/boot/efi/EFI/refind` or `/efi/EFI/refind`.
+   `/boot/EFI/refind`, `/boot/efi/EFI/refind` or `/efi/EFI/refind`.
 2. Insert this statement **at the bottom** of your main rEFInd configuration file:
-    `include rose-pine/theme.conf`
+   `include rose-pine/theme.conf`
 3. (Optional) Modify some settings there if you want. You probably do: you may
-    want a different background or something.
+   want a different background or something.
 
 > [!WARNING]
 > You cannot insert another include statement in the file:
@@ -38,9 +38,9 @@ In order to not blind users, solid color (no text color) is used by default.
 There are two alternative background pictures to choose from:
 
 - bordered background pictures (e.g. `solid-main-plain.png`):
-    generously sized borders surround the screen;
+  generously sized borders surround the screen;
 - single pixel background pictures (e.g. `solid-main-single.png`):
-    a single pixel is visible in the top-left corner.
+  a single pixel is visible in the top-left corner.
 
 Unfortunately, both of these options only support well resolutions with 16:9
 aspect ratios. They also use 8K background pictures, although rEFInds handles

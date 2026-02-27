@@ -54,7 +54,7 @@ rescaling well and the size remains small thanks to good compression.
 
 ## Thanks to
 
-- [BlackMa9ick](https://github.com/blackma9ick)
+- [Sofian-Hedi Krazini](https://github.com/shkrazini)
 - [Luke Childs](https://github.com/lukechilds/) for
   [Ambience rEFInd Theme](https://github.com/lukechilds/refind-ambience),
   licensed under the [MIT License](./acknowledgments), where icons are from.
